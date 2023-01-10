@@ -1,0 +1,72 @@
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em 0;
+  }
+  
+  .square,
+  .circle {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .square {
+    background-color: red;
+  }
+  
+  .square:hover {
+    background-color: rgba(96, 241, 86, 0.719);
+    transform: translateY(-20px);
+  }
+  
+  .circle {
+    background-color:blue;
+    border-radius: 50%;
+  }
+  .circle:hover {
+    background-color: rgb(236, 126, 36);
+    transform: translateY(-30px);
+  }
+  .triangle {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid yellow;
+    border-left: 100px solid transparent;
+  }
+  .triangle:hover {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid rgb(124, 5, 43);
+    border-left: 100px solid transparent;
+    transform: translateY(-50px);
+  }
+  button {
+    padding: 1.2em;
+    background-color: grey;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color:rgb(165, 161, 161);
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+ 
